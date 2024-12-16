@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sign Language Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="main">
+        <!-- Navbar Section -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container navbar-container">
+                <a class="navbar-brand" href="#">Sign for Deaf</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                More
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#faq">FAQ</a></li>
+                                <li><a class="dropdown-item" href="#blog">Blog</a></li>
+                                <li><a class="dropdown-item" href="#support">Support</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    
+        <!-- Bootstrap JS and Popper.js -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+        <!-- Smart Glove Section -->
+        <div class="sglove">
+            <p>Smart Glove</p>
+        </div>
+        
+        <!-- SilentEcho Name Section -->
+        <div class="name">
+            <p>SilentEcho</p>
+        </div>
+
+        <!-- Welcome Content -->
+        <div class="content">
+            <p>Welcome</p>
+            <div class="second">To the Sign Language Translator</div>
+        </div>
+        <!-- Video Section -->
+        <div class="video-wrapper">
+        <div class="video-container">
+            <video controls>
+            <source src="C:\Users\HP\Desktop\signlanguageproject\image\image\Robotica - AI British Sign Language avatar.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </video>
+        </div>
+        <!-- Next Button -->
+     <div class="next-btn-container">
+        <button id="next-btn" class="btn">Next</button>
+    </div>
+    </div>
+     
+    <!-- Hidden Sign Language Text Section -->
+    <div id="sign-language-text" class="sign-language-text" style="display: none;">
+        <h3>Sign Language Translation:</h3>
+        <p>This is the translated sign language text based on the video.</p>
+    </div>
+
+    <!-- About Section -->
+   <!-- About Section -->
+<section id="about">
+    <div class="container py-5">
+        <div class="row">
+            <!-- Left Column with Vertical Buttons -->
+            <div class="col-md-3 mb-4">
+                <div class="btn-group-vertical w-100" role="group">
+                    <button type="button" class="btn btn-outline-danger btn-lg text-white mb-3 active" onclick="activeMission('About Us', this, 'myAboutUsArea')">
+                        <i class="fa-solid fa-info-circle me-2"></i> About Us
+                    </button>
+                    <button type="button" class="btn btn-outline-danger btn-lg text-white mb-3" onclick="activeMission('Our Mission', this, 'myMissionArea')">
+                        <i class="fa-solid fa-bullseye me-2"></i> Our Mission
+                    </button>
+                    <button type="button" class="btn btn-outline-danger btn-lg text-white" onclick="activeMission('Our Vision', this, 'myVisionArea')">
+                        <i class="fa-solid fa-eye me-2"></i> Our Vision
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Right Column for Content -->
+            <div class="col-md-9">
+                <!-- About Us Section -->
+                <div id="myAboutUsArea" class="content-box p-4 bg-light text-dark rounded shadow-lg animate__animated animate__fadeIn">
+                    <h3>About Us</h3>
+                    <p>Sign for Deaf is a project designed to help individuals with hearing impairments communicate more easily. The goal is to create a sensor glove that can translate sign language into spoken or written text. This technology enables deaf and hard-of-hearing individuals to communicate effortlessly with the hearing world. The project combines hardware (a glove with sensors) and software (real-time translation on a web platform) to create a simple and effective solution.
+
+                        Our main objective is to make communication easier and more accessible for people with hearing disabilities. As an undergraduate team, we've worked together to integrate AI and machine learning to improve the accuracy and efficiency of the translation system. Through this project, we aim to enhance the daily lives of individuals with hearing impairments and raise awareness about the importance of digital accessibility for everyone.</p>
+                </div>
+
+                <!-- Our Mission Section -->
+                <div id="myMissionArea" class="content-box p-4 bg-light text-dark rounded shadow-lg" style="display: none;">
+                    <h3>Our Mission</h3>
+                    <p>Our mission is to make the world more accessible for people with hearing impairments. By developing a real-time sign language translation system, we aim to break communication barriers and help individuals engage in education, work, and social life.
+
+We are committed to improving communication and creating more opportunities for deaf and hard-of-hearing individuals. Our solution focuses on providing equal access to information and services, promoting inclusivity, and showing how technology can enhance the lives of people with disabilities.</p>
+                </div>
+
+                <!-- Our Vision Section -->
+                <div id="myVisionArea" class="content-box p-4 bg-light text-dark rounded shadow-lg" style="display: none;">
+                    <h3>Our Vision</h3>
+                    <p>Our vision is to build an inclusive digital world for individuals with disabilities, ensuring that accessibility and equal opportunities are provided across all sectors of society. We aim to foster a society that supports and integrates everyone regardless of their abilities.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Add JavaScript to toggle the content visibility and apply animations -->
+<script>
+    function activeMission(section, btn, contentId) {
+        // Remove 'active' class from all buttons
+        let buttons = document.querySelectorAll('.btn-group-vertical .btn');
+        buttons.forEach(button => button.classList.remove('active'));
+        
+        // Add 'active' class to the clicked button
+        btn.classList.add('active');
+        
+        // Hide all sections with transition
+        let sections = document.querySelectorAll('.content-box');
+        sections.forEach(section => {
+            section.style.display = 'none';
+            section.classList.remove('animate__fadeIn'); // Remove previous animation
+        });
+        
+        // Show the clicked section with fade-in animation
+        let activeSection = document.getElementById(contentId);
+        activeSection.style.display = 'block';
+        activeSection.classList.add('animate__fadeIn'); // Add fade-in animation
+    }
+
+    // Show the About Us section by default
+    window.onload = function() {
+        activeMission('About Us', document.querySelector('.btn-outline-danger'), 'myAboutUsArea');
+    };
+</script>
+
+<!-- Include Animate.css for animations -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+ 
+
+    <!-- Service Section -->
+    <section id="service">
+        <h1>Service</h1>
+        <p>
+            Discover our comprehensive range of services designed to empower communication through advanced 
+            technology. Our smart gloves translate sign language into spoken words in real-time, offering 
+            solutions for education, healthcare, and personal use.
+        </p>
+        <p>Explore the future of accessibility with SilentEcho.</p>
+    </section>
+
+    <!-- Design Section -->
+    <section id="design">
+        <h1>Design</h1>
+        <p>
+            Learn more about the cutting-edge design of our smart gloves. Crafted with precision, SilentEcho 
+            integrates lightweight materials, advanced sensors, and intuitive software to deliver unmatched 
+            performance and comfort.
+        </p>
+        <p>Our innovative design focuses on user-friendliness and reliability for all.</p>
+    </section>
+
+    <!-- contact Section -->
+    <section id="contact">
+        <style>
+            h1 {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 40px;
+                letter-spacing: 2px;
+                color: white;
+                text-align: center;
+            }
+          </style>
+        <h1>Contact Us</h1>
+        <style>
+            h1 {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 30px;
+                letter-spacing: 2px;
+                color: white;
+                text-align: center;
+            }
+          </style>
+          <h1>Any questions or or remarks? Just write us a message!</h1>
+        <form class="row g-3" style="max-width: 600px; margin: 0 auto;">
+            <div class="col-md-6">
+              <label for="fname" class="form-label">First Name</label>
+              <input type="fname" class="form-control" id="fname">
+            </div>
+            <div class="col-md-6">
+              <label for="lname" class="form-label">Last Name</label>
+              <input type="lname" class="form-control" id="lname">
+            </div>
+            <div class="col-12">
+              <label for="email" class="form-label">Email</label>
+              <input type="text" class="form-control" id="email" placeholder="perera123@gmail.om">
+            </div>
+            <div class="col-12">
+              <label for="password" class="form-label">Password</label>
+              <input type="text" class="form-control" id="password">
+            </div>
+            <div class="col-md-6">
+              <label for="inputCity" class="form-label">City</label>
+              <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="col-md-4">
+              <label for="inputState" class="form-label">State</label>
+              <select id="inputState" class="form-select">
+                <option selected>Choose...</option>
+                <option>...</option>
+              </select>
+            </div>
+            <div class="col-md-2">
+              <label for="inputZip" class="form-label">Zip</label>
+              <input type="text" class="form-control" id="inputZip">
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                  Check me out
+                </label>
+              </div>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+          </form>
+          
+    </section>
+
+    <script>
+        // JavaScript for "Next" button to show the sign language text
+        document.getElementById("next-btn").addEventListener("click", function() {
+            // Show the sign language text
+            document.getElementById("sign-language-text").style.display = "block";
+        });
+    </script>
+</body>
+</html>
